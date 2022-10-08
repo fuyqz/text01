@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+    }
+    /* * {
+        border: 1px solid black;
+    } */
+    a{
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .baise{
+        background-color: white;
+        box-shadow: -1px 0 30px 2px rgba(103, 104, 106, 0.18);
+    }
+    .flex{
+        display: flex;
+    }
+    .col{
+        flex-direction: column;
+    }
+    .flex1{
+        flex: 1;
+    }
+    .flex2{
+        flex: 3;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .smkuai{
+        height: 100px;
+        flex: 1;
+        background-color: white;
+    }
+    .mg8{
+        margin: 8px;
+    }
+    .mgr8{
+        margin-right: 8px;
+    }
+    .mgt8{
+        margin-top: 8px;
+    }
+    .touxiang{
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(210, 202, 202);
+    }
+    .daohang{
+        padding: 10px 20px;
+        font-size: 18px;
+        border-bottom: 1px solid rgb(171, 167, 167);
+        color: #666;
+    }
+    .neirong::-webkit-scrollbar{
+            display: none;
+        }
+    /* @media (max-width:600px) {
+        .cebianlan{
+            display: none;
+        }
+        .neirong{
+            flex-direction: column;
+        }
+        .shujuqu{
+            flex-direction: column;
+        }
+        .youqu{
+            margin-left: 8px;
+        }
+        .shuju{
+            margin: 0 0 8px;
+            flex: auto;
+        }
+    } */
+</style>
+<!-- <script>
+    function dianzan(){
+        let dzn = window.document.getElementById('dz');
+        let num  = parseInt(dzn.innerText);
+        let newnum = num + 1;
+        dzn.innerText = newnum;
+        return;
+    }
+</script> -->
+<body class="flex">
+    <!-- 侧边栏 -->
+    <div class="baise cebianlan" style="width: 200px; z-index: 2;">
+        <!-- 头像栏 -->
+        <div class="flex touxiang">
+            <img
+        src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6cfe571f2929f68cf089b2e7101b95456a579fb5.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1665903981&t=3f415cd4c424e9c1b8b1c564333d8e98"
+        alt="艾雅法拉"
+        width="40px"
+        height="40px"
+      />
+     <!-- 姓名栏 -->
+     <div style="margin-left: 10px;">浮云小站</div>    
+    </div> 
+        <!-- 导航栏 -->
+        <div>
+            <div class="daohang">
+                <a href="./basemsg.html">个人简历</a>
+            </div>
+            <div class="daohang">
+                <a href="./game.html">学习笔记</a>
+            </div>
+            <div class="daohang">
+                <a href="./text.html">游戏相关</a>
+            </div>
+            <div class="daohang">
+                <a href="#">视频发布</a>
+            </div>
+            <div class="daohang">
+                <a href="#">留言区</a>
+            </div>
+            <div class="daohang">
+                <a href="#">向我反馈</a>
+            </div>
+        </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+        <!-- 头部栏 -->
+        <div style="height: 50px; z-index: 1;" class="baise">
+           
+        </div>
+        <!-- 内容区 -->
+        <div class="flex1 flex neirong" style="overflow: auto;">
+            <!-- 左区 -->
+            <div class="flex2 column flex mg8">
+                <!-- 数据区 -->
+                <div class="flex shujuqu">
+                    <!-- 数据块 -->
+                    <div class="smkuai shuju mgr8">
+                        
+                    </div>
+                    <div class="smkuai shuju mgr8"></div>
+                    <div class="smkuai shuju mgr8"></div>
+                    <div class="smkuai shuju "></div>
+                </div>
+                <!-- 列表区 -->
+                <div class="flex column">
+                    <!-- 列表块 -->
+                    <div class="baise mgt8" style="height: 200px;"></div>
+                    <div class="baise mgt8" style="height: 200px;"></div>
+                    <div class="baise mgt8" style="height: 200px;"></div>
+                    <div class="baise mgt8" style="height: 200px;"></div>
+                    <div class="baise mgt8" style="height: 200px;"></div>
+                    <div class="baise mgt8" style="height: 200px;"></div>
+                    <div class="baise mgt8" style="height: 200px;"></div>
+                    <div class="baise mgt8" style="height: 200px;"></div>
+                    <div class="baise mgt8" style="height: 200px;"></div>
+                </div>
+            </div>
+            <!-- 右区 -->
+            <div class="flex1 column flex mg8 youqu">
+                <!-- 提示区 -->
+                <div class="baise"style="height: 150px;"></div>
+                <!-- 消息区 -->
+                <div class="baise mgt8"style="height: 300px;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
