@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        border: 1px solid black;
+    }
+    .flex{
+        height: 100px;
+        display: flex;
+        
+        flex-wrap: wrap;
+    }
+    .flex > *{
+        flex-shrink: 0;
+        flex-basis: 300px;
+        flex: 1;
+        /* flex-basis: 50px; */
+    }
+    .flex4{
+        display: flex;
+        flex: 1;
+        min-width: 0;
+    }
+    .flex4 > p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+</style>
+<body>
+    <div class="flex"> 
+        <div class="flex1">1</div>
+        <div class="flex2">2</div>
+        <div class="flex3">3</div>
+        <div class="flex4">
+            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        </div>
+        <div class="flex5">5</div>
+    </div>  
+</body>
+</html>
