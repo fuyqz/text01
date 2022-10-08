@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* * {
+        border: 1px solid black;
+    } */
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+    }
+    img{
+      width:  40px;
+      height: 40px;
+    }
+    .dingbu{
+       display: flex;
+       justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+    }
+    .txt{
+        font-size: 16px;
+        margin-top: 7px;
+    }
+    /* 左侧信息栏样式 */
+    .left_msg{
+        margin-top:40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .cbkk{
+        border-bottom: 1px solid rgb(19, 18, 18);
+    }
+    /* 右侧文字框大小 */
+    .rt_txt{
+        height: 120px;
+        background-color: white;
+        box-shadow: -1px 0 30px 2px rgba(103, 104, 106, 0.18);
+    }
+    .rt_toptxt{
+        background-color: rgb(170, 179, 179);
+        box-shadow: -1px 0 30px 2px rgba(103, 104, 106, 0.18);
+    }
+    /* 通用样式部分 */
+    .baise{
+        background-color: white;
+        box-shadow: -1px 0 30px 2px rgba(103, 104, 106, 0.18);
+    }
+    .flex{
+        display: flex;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .flex1{
+        flex: 1;
+    }
+    .baise{
+        background-color: white;
+    }
+    .mg8{
+        margin: 8px;
+    }
+    .mgt8{
+        margin-top: 8px;
+    }
+    .mgr8{
+        margin-right: 8px;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    .biankuang{
+        border: 1px solid gray;
+        box-shadow: -1px 0 30px 2px rgba(193, 194, 198, 0.18);
+    }
+    /* 手机适配 */
+    @media (max-width:600px){
+        .left_cb{
+            display: none;
+        }
+    }
+</style>
+<script>
+    function c(){
+        this.display = block;
+    }
+</script>
+<body>
+    <!-- 顶部栏 -->
+    <div class="dingbu baise">
+        <!-- 返回首页 -->
+        <div class="txt">
+            <a href="./index.html">◀</a>
+        </div>
+         <!-- 头像栏 -->
+         <div class="logo">
+            <img
+            src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6cfe571f2929f68cf089b2e7101b95456a579fb5.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1665903981&t=3f415cd4c424e9c1b8b1c564333d8e98"
+            alt="艾雅法拉"
+            />
+        <!-- 姓名栏 -->
+        <div class="txt">浮云小站</div>
+        </div>
+         <div></div>     
+    </div>
+
+    <!-- 内容区 -->
+    <div class="flex1 mgt8 flex">
+        <!-- 左区 -->
+        <div style="width: 100px; padding: 10px;" class="colun  mgr8 baise left_cb" onblur="see">
+            <!-- 图片存放区 -->
+            <div style="height: 120px;" class="mgt8 biankuang"></div>
+            <!-- 部分信息 -->
+            <div class="left_msg">
+                <div style="text-align: center; border-bottom: 1px solid black;">基本信息</div>
+                <div style="margin-top:30px" class="cbkk">
+                    姓 名:  fyqz
+                </div>
+                <div class="mgt8 cbkk">
+                    性别:  fyqz
+                </div>
+                <div class="mgt8 cbkk">
+                    年龄:  fyqz
+                </div>
+                <div class="mgt8 cbkk">
+                    学 校:  fyqz
+                </div>
+                <div class="mgt8 cbkk">
+                    专 业:  fyqz
+                </div>
+            </div>
+        </div>
+        <!-- 右区 -->
+        <div class="flex1" style="margin-left: 10px;">
+            <div class="rt_toptxt">⚪求职意向</div>
+            <div class="rt_txt"></div>
+            <div class="rt_toptxt">⚪综合能力</div>
+            <div class="rt_txt"></div>
+            <div class="rt_toptxt">⚪工作经历</div>
+            <div class="rt_txt"></div>
+            <div class="rt_toptxt">⚪自我介绍</div>
+            <div class="rt_txt"></div>
+        </div>
+    </div>
+    <!-- 底部链接 -->
+    <div class="mgt8 center baise">
+        <a href="#" class="mgr8">友情链接1</a>
+        <a href="#" class="mgr8">友情链接2</a>
+        <a href="#" class="mgr8">友情链接3</a>
+        <a href="#" class="mgr8">友情链接4</a>
+    </div>
+</body>
+</html>
